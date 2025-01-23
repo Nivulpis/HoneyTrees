@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "tag": "cobblemon:apricorns"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "honeytrees:honey_jar"
+  }
+}
