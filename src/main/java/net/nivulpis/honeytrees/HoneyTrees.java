@@ -1,5 +1,8 @@
 package net.nivulpis.honeytrees;
 
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.world.level.ItemLike;
 import net.nivulpis.honeytrees.block.ModBlocks;
 import net.nivulpis.honeytrees.item.ModItems;
 import org.slf4j.Logger;
@@ -72,7 +75,7 @@ public class HoneyTrees {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.HONEY_JAR);
+            event.accept((ItemLike) ModItems.HONEY_JAR);
         }
     }
 
@@ -88,6 +91,7 @@ public class HoneyTrees {
     {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            ItemBlockRenderTypes.setRenderLayer(ModBlocks.SLATHERED_HONEY.get(), RenderType.translucent());
 
         }
     }
