@@ -6,7 +6,6 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.nivulpis.honeytrees.HoneyTrees;
 import net.nivulpis.honeytrees.block.ModBlocks;
-import net.nivulpis.honeytrees.block.custom.SlatheredHoneyBlock;
 
 import java.util.function.Supplier;
 
